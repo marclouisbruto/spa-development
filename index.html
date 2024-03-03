@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSPU College of Computer Studies</title>
+    <link rel="shortcut icon" href="logo-no_bg.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slides = document.querySelectorAll('.carousel-slide');
+            let currentSlide = 0;
+
+            slides[currentSlide].style.display = 'block';
+
+            function nextSlide() {
+                slides[currentSlide].style.display = 'none';
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].style.display = 'block';
+            }
+
+            setInterval(nextSlide, 3000);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="header-logo">
+                <img src="school.jpg" alt="" width="50" height="50">
+                <img src="logo.jpg" alt="" width="50" height="50">
+                <h4>Laguna State Polytechnic University -<br>College of Computer Studies</h4>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#vmq">VMQ</a></li>
+                    <li><a href="#programs">PROGRAMS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="home">
+            <div class="back-image"></div>
+            <div class="home-details">
+                <div class="details-image">
+                </div>
+                <div class="details">
+                    <div id="content">
+                        <p><i>Your future starts <span class="maroon1">HERE!</span></i></p>
+                        <h2>
+                            <div id="welcome">Welcome to LSPU - </div></span> COLLEGE OF <span class="maroon">COMPUTER
+                                STUDIES</span>
+                        </h2><br><br>
+                        <div class="viewprog">
+                            <a href="#programs"> <button>View Programs ></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="vmq">
+            <div id="vmq-holder">
+                <h1 id="vmqtitle">VISION, MISSION, AND QUALITY POLICY</h1>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h1>VISION</h1>
+                    <div class="line"></div>
+                    <p>LSPU is a center of technology innovation that promotes interdisciplinary learning, sustainable
+                        utilization of resources, collaboration and partnership with the community and stakeholders</p>
+                </div>
+                <div class="card">
+                    <h1>MISSION</h1>
+                    <div class="line"></div>
+                    <p>LSPU, driven by progressive leadership, is a premier institution providing technology-mediated
+                        agriculture, fisheries and other related and emerging disciplines significantly contributing to
+                        the growth and development of the region and nation.</p>
+                </div>
+                <div class="card">
+                    <h1>QUALITY</h1>
+                    <div class="line"></div>
+                    <p>LSPU delivers quality education through responsive instruction, distinctive research, sustainable
+                        extension and production service. Thus, we are committed with continual improvement to meet
+                        applicable requirements to provide quality, efficient and effective services to the university
+                        stakeholder's highest level of satisfaction through an excellent management system imbued with
+                        utmost integrity, professionalism and innovation.</p>
+                </div>
+            </div>
+        </section>
+        <section id="programs">
+            <div class="prog-container">
+                <div class="back-image">
+                </div>
+                <div id="title-holder">
+                    <h1 id="prog-title">PROGRAMS</h1>
+                </div>
+                <div class="program-card">
+                    <div class="courses-card">
+                        <div class="course-img"></div>
+                        <div class="course-line">
+                            <div class="mid-logo"></div>
+                        </div>
+                        <h3>Bachelor of Science in <br><span style="color: #800000;font-size: 1.2em;">Information
+                                Technology</span></h3>
+                        <h4>A four-year degree program that equips students with the basic ability to conceptualize,
+                            design and implement software applications.</h4>
+                        <div class="apply">
+                            <button>
+                                <h4>Apply Now</h4>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="courses-card">
+                        <div class="course-img"></div>
+                        <div class="course-line">
+                            <div class="mid-logo"></div>
+                        </div>
+                        <h3>Bachelor of Science in <br> <span style="color: #800000; font-size: 1.2em;">Computer
+                                Science</span></h3>
+                        <h4>A four-year degree program that focuses on the study of computer algorithms and its
+                            implementation through computer software and hardware.</h4>
+                        <div class="apply">
+                            <button>
+                                <h4>Apply Now</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-container">
+                <h2 id="about-title">ABOUT</h2>
+                <h2 id="gallery">
+                    Gallery
+                </h2>
+                <div id="gallery-content">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="content1.jpg" alt="Slide 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="content2.jpg" alt="Slide 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="content3.jpg" alt="Slide 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="content4.jpg" alt="Slide 4">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="content5.jpg" alt="Slide 5">
+                        </div>
+                    </div>
+                    <div class="gallery-card" id="content1"></div>
+                    <div class="gallery-card" id="content2"></div>
+                    <div class="gallery-card" id="content3"></div>
+                    <div class="gallery-card" id="content4"></div>
+                    <div class="gallery-card" id="content5"></div>
+                    <div class="gallery-card" id="content6"></div>
+                </div>
+            </div>
+            <h2 id="gallery">
+                CCS Staff
+            </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="5">
+                            <h3>Bachelor of Science in Computer Science</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td colspan="5" class="td-border"><b>CATHERINE A. CASTILLO</b>
+                        <br>Program Coordinator (BSCS) / Curriculum Instruction Development Coordinator
+                    </td>
+                </tr>
+
+                <tr>
+                    <th rowspan="3" class="professor">Professors</th>
+                    <td>NICKO C. ALBES</td>
+                    <td>NORRIS ALEXIS P. AMORA</td>
+                    <td>PRINCE ROSS O. ANDRES</td>
+                    <td>KRISTINE KAYE M. ARIDA</td>
+                </tr>
+                <tr>
+
+                    <td>NIERRO C. ILAGAN</td>
+                    <td>PAUL JENSEN P. LARA</td>
+                    <td>KRISTINE S. OMPANGCO</td>
+                    <td>MARTIN JASON S. TAGADTAD</td>
+                </tr>
+                <tr>
+                    <td>AL JOHN VILLAREAL</td>
+                </tr>
+            </table>
+            <table>
+                <thead>
+                <tr>
+                    <th colspan="5">
+                        <h3>Bachelor of Science in Information Technology</h3>
+                    </th>
+                </tr>
+            </thead>
+                <tr>
+                    <td colspan="5" class="td-border"><b>JOESUA R. MANZANERO</b>
+                        <br>Program Coordinator (BSINFOTECH) / OJT Coordinator & Computer Club Adviser
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="3" class="professor">Professors</th>
+                    <td>MARCO JR. N. DEL ROSARIO</td>
+                    <td>WINCHELL CEAZAR R. DESAMERO</td>
+                    <td>JOANNA E. DE TORRES</td>
+                    <td>MARLON BOYET B. DUNGO</td>
+                </tr>
+                <tr>
+                    <td>CRISELDA C. ENCANTO</td>
+                    <td>SARAH B. ESCOTE</td>
+                    <td>JENNELYN E. ESPINUEVA</td>
+                    <td>REYMAR V. MANALOTO</td>
+                </tr>
+                <tr>
+                    <td>ANNA PRINCESS L. MARITA</td>
+                    <td>MA. CONCEPCION R. REPALAM</td>
+                    <td>JOHN RYAN S. UAL</td>
+                </tr>
+            </table>
+            <h2 id="gallery">
+                References
+            </h2>
+            <table>
+                <tr>
+                    <td>
+                        LSPU and CCS Logo - https://lspu.edu.ph/campus/college_profile/scc/ccs <br>
+                        BSINFOTECH and BSCS Information - https://www.finduniversity.ph/majors/bs-in-information-technology-philippines/
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <footer>
+            <div class="contact-info">
+                <ul>
+                    <li>Address: 38M6+6VQ, Cosico Ave, San Pablo City, 4000 Laguna</li>
+                    <li>Email: sample@yourcollege.edu</li>
+                    <li>Phone: +123-456-7890</li>
+                </ul>
+            </div>
+            <div id="copyright">
+                <p>&copy; 2024 LSPU College of Computer Studies. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

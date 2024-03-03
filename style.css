@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: end;
+    padding: 5px 30px;
+    top: 0;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgb(122, 122, 122);
+}
+#header-logo{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+#header-logo img{
+    margin-right: 10px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    
+}
+#home{
+    margin-top: 60px;
+    width: 100%;
+    height: 91vh;
+    background-color: #800000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.back-image{
+    position: absolute;
+    width: 100%;
+    height: 91vh;
+    background-image: url(building.png);
+    background-size: cover;
+    opacity: 0.3;
+}
+.home-details{
+    position: absolute;
+    width: 78%;
+    height: 70vh;
+    background-color: white;
+    top: 72px;
+    display: flex;
+    box-shadow: 10px 10px 10px black;
+}
+.details-image{
+    width: 40%;
+    background: url(details-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.details{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content p{
+    font-size: 23px;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 50px;
+}
+.maroon1{
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#content h2, .maroon, #welcome{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 29px;
+}
+#welcome{
+    width: 100%;
+    padding-bottom: 12px;
+    font-size: 26px;
+}
+.maroon, .maroon1{
+    color: #800000;
+}
+.vertical{
+    margin-right: 15px;
+    height: 300px;
+    border: 1px solid black;
+}
+.viewprog{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.viewprog button{
+    padding: 15px 25px;
+    background-color: #800000;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+.viewprog button:hover{
+    transform: scale(1.1);
+    box-shadow: -2px 2px 5px black, 
+                2px 2px 5px black;
+}
+#vmq{
+    height: 105vh;
+    background-color: white;
+    padding-top: 20px;
+    /* border: 1px solid black; */
+}
+#vmqtitle{
+    text-align: center;
+    background-color: #800000;
+    width: 500px;
+    margin: 70px auto 0;
+    color: white;
+    padding: 10px 20px;
+}
+#vmq-holder{
+    width: 100%;
+}
+#title-holder{
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+}
+#prog-title{
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    width: 300px;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    width: 400px;
+    height: 400px;
+    background-color: #800000;
+    padding: 25px;
+    color: white;
+    margin-top: 40px;
+}
+.card p{
+    margin-top: 20px;
+    text-align: justify;
+}
+.card h1{
+    padding: 20px 20px 10px;
+}
+.line{
+    border: 1px solid white;
+}
+#programs{
+    height: 100vh;
+    padding-top: 60px;
+}
+.prog-container{
+    height: 91vh;
+    background-color: #800000;
+}
+.program-card{
+    height: 90vh;
+    width: 100%;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.courses-card{
+    /* border-radius: 10px; */
+    box-shadow: 5px 5px 8px black;
+    width: 370px;
+    height: 450px;
+    background-color: white;
+    margin: 55px 50px 0;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.courses-card:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 8px black, -5px 5px 8px black;
+}
+.courses-card h3{
+    margin: auto;
+    width: 90%;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.courses-card h4{
+    padding: 10px 30px;
+    text-align: justify;
+}
+.course-img{
+    /* border-radius: 10px 10px 0 0; */
+    height: 180px;
+    background: url(class.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.course-line{
+    height: 40px;
+    background-color: #ff0000;
+    display: flex;
+    
+}
+.mid-logo{
+    position: absolute;
+    top: 160px;
+    height: 80px;
+    width: 80px;
+    background: url(logo-no_bg.png);
+    background-size: cover;
+    margin-left: 20px;
+}
+.apply{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.apply button{
+    border-radius: 10px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.apply button:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px black;
+}
+#about{
+    height: 415vh;
+}
+.about-container{
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+#about-title{
+    letter-spacing: 5px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#gallery{
+    background-color: #a90101;
+    color: white;
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 10px 10px #800000,
+                -10px 10px #800000;
+}
+#gallery-content{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.gallery-card{
+    margin: 25px;
+    width: 370px;
+    border: 5px solid #800000;
+    height: 180px;
+}
+.carousel {
+    width: 80%;
+    margin: auto;
+    padding: auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: none;
+    text-align: center;
+}
+
+.carousel-slide img {
+    border: 5px solid #800000;
+    box-shadow: 3px 3px 8px black;
+    width: 80%;
+    height: auto;
+}
+#content1{
+    background: url(content1.jpg) no-repeat;
+}
+#content2{
+    background: url(content2.jpg) no-repeat;
+}
+#content3{
+    background: url(content3.jpg) no-repeat;
+}
+#content4{
+    background: url(content4.jpg) no-repeat;
+}
+#content5{
+    background: url(content5.jpg) no-repeat;
+}
+#content6{
+    background: url(class.jpg) no-repeat;
+}
+#content1, #content2, #content3, #content4, #content5, #content6{
+    background-position: center;
+    background-size: cover;
+}
+table{
+    border-collapse: collapse;
+    margin: 50px auto 80px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid #800000;
+}
+.td-border{
+    border-bottom: 2px solid #840000;
+}
+table tr td, th{
+    padding: 25px 5px;
+}
+table tr td{
+    font-weight: bold;
+}
+.professor{
+    width: 100px;
+    background-color: #840000;
+    color: white;
+}
+thead{
+    background-color: #840000;
+    color: white;
+}
+footer{
+    width: 100%;
+    height: 165px;
+    background-color: #420000;
+}
+.contact-info{
+    width: 500px;
+    padding: 20px 30px;
+    margin: 10px 50px;
+}
+.contact-info ul li{
+    color: white;
+    list-style-type: square;
+    margin-bottom: 10px;
+}
+#copyright{
+    color: white;
+    text-align: end;
+    padding: 0 20px 0 20px;
+}
